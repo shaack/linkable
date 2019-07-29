@@ -1,0 +1,23 @@
+{
+  "name": "linkable-js",
+  "version": "1.0.0",
+  "description": "Makes all elements with class=\"linkable\" a link to data-href",
+  "main": "src/linkable.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaack/linkable-js.git"
+  },
+  "keywords": [
+    "html",
+    "tools"
+  ],
+  "author": "shaack.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shaack/linkable-js/issues"
+  },
+  "homepage": "https://github.com/shaack/linkable-js#readme"
+}
