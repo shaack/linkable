@@ -13,4 +13,21 @@ Make every HTML Element a link by setting its class to `linkable`.
 The div ist now clickable, has `cursor="pointer"` and links to
 shaack.com.
 
-  
+## install
+
+
+Use npm:
+```
+npm install -save linkable-js
+```
+
+Or just download this repository.
+
+## use
+
+Just include the script `linkable.js`.
+```html
+<script src="/node_modules/linkable-js/src/linkable.js"></script>
+```
+Now all elements with `class="linkable"` are links to their
+`data-href` attribute. 
