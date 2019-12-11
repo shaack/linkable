@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     for (const linkable of linkables) {
         linkable.style.cursor = "pointer"
         linkable.addEventListener("click", (event) => {
-            location.href = event.target.getAttribute("data-href")
+            location.href = linkable.getAttribute("data-href")
         })
     }
 })
