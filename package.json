@@ -1,6 +1,6 @@
 {
   "name": "linkable-js",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Makes all elements with class=\"linkable\" a link to data-href",
   "main": "src/linkable.js",
   "scripts": {
