@@ -1,9 +1,20 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const linkables = document.getElementsByClassName("linkable")
-    for (const linkable of linkables) {
-        linkable.style.cursor = "pointer"
-        linkable.addEventListener("click", (event) => {
-            location.href = linkable.getAttribute("data-href")
-        })
+;(function () {
+    documentReady(function () {
+        var linkables = document.getElementsByClassName("linkable")
+        for (var i = 0; i < linkables.length; i++) {
+            var linkable = linkables[i]
+            linkable.style.cursor = "pointer"
+            linkable.addEventListener("click", function () {
+                location.href = this.getAttribute("data-href")
+            })
+        }
+    })
+
+    function documentReady(fn) {
+        if (document.readyState !== 'loading') {
+            fn()
+        } else {
+            document.addEventListener('DOMContentLoaded', fn)
+        }
     }
-})
+})()
